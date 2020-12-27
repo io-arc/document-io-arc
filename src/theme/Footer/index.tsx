@@ -56,7 +56,7 @@ function Footer() {
   return <footer className={clsx('footer', {
     'footer--dark': footer.style === 'dark'
   })}>
-      <div className="container">
+      <div className="container global">
         {links && links.length > 0 && <div className="row footer__links">
             {links.map((linkItem, i) => <div key={i} className="col footer__col">
                 {linkItem.title != null ? <h4 className="footer__title">{linkItem.title}</h4> : null}
