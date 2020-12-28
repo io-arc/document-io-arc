@@ -17,6 +17,9 @@ extends:
   - plugin:react/recommended
   - prettier/@typescript-eslint
 
+plugins:
+  - react
+
 rules:
   prettier/prettier:
     - error
@@ -27,7 +30,3 @@ rules:
       arrowParens: always
 
   eofline: off
-
-globals:
-  Atomics: readonly
-  SharedArrayBuffer: readonly
