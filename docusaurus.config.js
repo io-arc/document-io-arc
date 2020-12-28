@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'io arc Documents',
+  tagline: "It's so easy! build in 5 minutes! WEB/PWA/SPA boilerplate CLI.",
+  url: 'https://io-arc.docs.arc-one.jp',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,7 +45,8 @@ module.exports = {
         // }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} io arc project.`
-    }
+    },
+    image: 'img/ogp.png'
   },
   plugins: [],
   presets: [
