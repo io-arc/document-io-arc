@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   title: 'io arc Documents',
   tagline: "It's so easy! build in 5 minutes! WEB/PWA/SPA boilerplate CLI.",
@@ -48,7 +46,7 @@ module.exports = {
     },
     image: 'img/ogp.png'
   },
-  plugins: [],
+  plugins: ['docusaurus-plugin-sass'],
   presets: [
     [
       '@docusaurus/preset-classic',
