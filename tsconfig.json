@@ -7,5 +7,5 @@
     },
     "typeRoots": ["types"]
   },
-  "include": ["src/", "components/"]
+  "include": ["src/", "components/", "types/"]
 }

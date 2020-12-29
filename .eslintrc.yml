@@ -20,6 +20,18 @@ extends:
 plugins:
   - react
 
+settings:
+  react:
+    createClass: createReactClass
+    pragma: React
+    fragment: Fragment
+    version: detect
+    flowVersion: '0.53'
+  propWrapperFunctions:
+    - forbidExtraProps
+    - property: freeze
+      object: Object
+
 rules:
   prettier/prettier:
     - error
