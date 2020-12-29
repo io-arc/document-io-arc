@@ -10,9 +10,55 @@
   line-height: 1;
   padding: 0.3em 0.4em;
   border-radius: 4px;
+  font-weight: bold;
 }
 
-.tagsItemCommon {
-  background: #cc0000;
+.tagsItemAll {
+  background: #f4d00e;
+  color: #111;
+}
+
+.tagsItemHtml {
+  background: #f26625;
+  color: #fff;
+}
+
+.tagsItemPug {
+  background: #a96454;
+  color: #fff;
+}
+
+.tagsItemCss {
+  background: #2965f0;
+  color: #fff;
+}
+
+.tagsItemSass {
+  background: #bf4180;
+  color: #fff;
+}
+
+.tagsItemStylus {
+  background: #ff6348;
+  color: #fff;
+}
+
+.tagsItemBabel {
+  background: #f6da56;
+  color: #111;
+}
+
+.tagsItemTs {
+  background: #3178c6;
+  color: #fff;
+}
+
+.tagsItemVue {
+  background: #40b983;
+  color: #fff;
+}
+
+.tagsItemYaml {
+  background: #025b9c;
   color: #fff;
 }

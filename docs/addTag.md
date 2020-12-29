@@ -5,4 +5,4 @@ title: Tags Example
 
 import Tags from '../components/Tags'
 
-<Tags keys={['common', 'html']} />
+<Tags keys={['pug', 'html']} />
