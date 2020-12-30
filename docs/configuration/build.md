@@ -61,9 +61,6 @@ options:
         compress:
           drop_console: true
 
-    # tsconfig.json which is specified at the time of webpack build
-    tsconfig: tsconfig.json
-
     # file names that combine the same logic
     splitFilename: assets
 
@@ -71,6 +68,9 @@ options:
 
     # The ESLint file to specify when building webpack
     eslint: '.eslintrc'
+
+    # tsconfig.json which is specified at the time of webpack build
+    tsconfig: tsconfig.json
 
   json:
     minify: true
@@ -212,7 +212,7 @@ Output destinations by language.
 
 The output destination hierarchy is specified by an array.
 
-e.g. `dist/common/css` is `[common, css]`
+e.g. `dist/common/css` is `['common', 'css']`
 
 However, the root of `HTML` and `Pug` is in `wsDir.html`.
 
@@ -251,3 +251,199 @@ Output destination when images are built using `file-loader (webpack)`.ss
 **Default**: `['common', 'data']`
 
 Output destination for Yaml2Json.
+
+---
+
+## Build options
+
+Optional settings for building with Webpack.
+
+### options.html.minify
+
+<Tags presets={['html']} />
+
+**Default**: `false`
+
+### options.pug.php
+
+<Tags keys={['pug']} />
+
+**Default**: `false`
+
+Output as a PHP file at build time.  
+e.g. `index.pug` => `index.php`
+
+### options.pug.lint
+
+<Tags keys={['pug']} />
+
+**Default**: `'.pug-lintrc.json'`
+
+Path to Pug's Lint configuration file from the project root.
+
+### options.pug.vuePugLint
+
+<Tags keys={['pug']} />
+
+**Default**: `'config-vue/.pug-lintrc.json'`
+
+Pug's Lint configuration file path that can only be set in Vue.js components.
+
+### options.css.minify
+
+<Tags presets={['css']} />
+
+**Default**: `false`
+
+### options.css.postcss.mqpacker
+
+<Tags presets={['css']} keys={['vue']} />
+
+**Default**: `true`
+
+Using [node-css-mqpacker](https://github.com/hail2u/node-css-mqpacker).
+
+### options.js.minify
+
+<Tags presets={['js']} />
+
+**Default**: `false`
+
+### options.js.teaser
+
+<Tags presets={['js']} />
+
+**Default**:
+
+```json
+{
+  "parallel": true,
+  "extractComments": false,
+  "terserOptions": { "compress": { "drop_console": true } }
+}
+```
+
+Using [Terser plugin](https://webpack.js.org/plugins/terser-webpack-plugin/) if minify is true.
+
+### options.js.splitFilename
+
+<Tags presets={['js']} />
+
+**Default**: `'assets'`
+
+File names that combine the same logic.
+
+### options.js.sourceMap
+
+<Tags presets={['js']} />
+
+**Default**: `false`
+
+### options.js.eslint
+
+<Tags presets={['js']} />
+
+**Default**: `undefined`
+
+Path of the ESLint configuration file to check when **building webpack**.  
+If it is not set, Lint will not be executed.
+
+### options.js.tsconfig
+
+<Tags keys={['typescript', 'vue']} />
+
+**Default**: `'tsconfig.json'`
+
+Path of the TypeScript configuration file to check when **building webpack**.
+
+### options.json.minify
+
+<Tags keys={['yaml']} />
+
+**Default**: `false`
+
+---
+
+## file-loader options
+
+Settings for using file-loader.  
+The `use` option specifies whether to use the file-loader.  
+The `hash` option specifies whether to insert a 6-digit hash value after image files for cache protection.
+
+### options.fileLoader.html.use
+
+<Tags presets={['html']} />
+
+**Default**: `true`
+
+### options.fileLoader.html.hash
+
+<Tags presets={['html']} />
+
+**Default**: `true`
+
+### options.fileLoader.html.target
+
+<Tags presets={['html']} />
+
+**Default**:
+
+```json
+[
+  { "tag": "img", "attribute": "src", "type": "src" },
+  { "tag": "img", "attribute": "srcset", "type": "srcset" },
+  { "tag": "img", "attribute": "data-src", "type": "src" },
+  { "tag": "img", "attribute": "data-srcset", "type": "srcset" },
+  { "tag": "source", "attribute": "src", "type": "src" }
+]
+```
+
+See reference of [html-loader#attributes](https://webpack.js.org/loaders/html-loader/#attributes).
+
+### options.fileLoader.css.use
+
+<Tags presets={['css']} keys={['vue']} />
+
+**Default**: `true`
+
+### options.fileLoader.css.hash
+
+<Tags presets={['css']} />
+
+**Default**: `true`
+
+### options.fileLoader.js.use
+
+<Tags keys={['babel', 'typescript']} />
+
+**Default**: `true`
+
+### options.fileLoader.js.hash
+
+<Tags keys={['babel', 'typescript']} />
+
+**Default**: `true`
+
+### options.fileLoader.vue.use
+
+<Tags keys={['vue']} />
+
+**Default**: `true`
+
+### options.fileLoader.vue.loader
+
+<Tags keys={['vue']} />
+
+**Default**:
+
+```json
+{
+  "video": ["src", "poster"],
+  "source": "src",
+  "img": "src",
+  "image": ["xlink:href", "href"],
+  "use": ["xlink:href", "href"]
+}
+```
+
+See reference of [vue-loader#transformAssetUrls](https://vue-loader.vuejs.org/options.html#transformasseturls).

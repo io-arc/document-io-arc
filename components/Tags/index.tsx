@@ -75,7 +75,7 @@ const display = (item: items): string => {
     case items.vue:
       return 'Vue'
     case items.yaml:
-      return 'YAML'
+      return 'YAML2JSON'
     default:
       return ''
   }
@@ -99,14 +99,14 @@ const createKeys = (props: IfProps): items[] => {
 
   const res = []
 
+  if (presets != null && presets.length > 0) {
+    presets.forEach((preset: lang) => {
+      const assets = allLanguage(preset)
+      res.push(...assets)
+    })
+  }
+
   if (keys != null) res.push(...keys)
-
-  if (presets == null || presets.length === 0) return res
-
-  presets.forEach((preset: lang) => {
-    const assets = allLanguage(preset)
-    res.push(...assets)
-  })
 
   return res
 }
