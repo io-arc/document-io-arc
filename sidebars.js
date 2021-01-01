@@ -6,7 +6,7 @@ module.exports = {
       'configuration/site',
       'configuration/build'
     ],
-    Build: ['build/html', 'build/css'],
+    Build: ['build/html', 'build/css', 'build/js'],
     Plugins: ['plugins/plugins'],
     Example: ['addTag', 'doc1', 'mdx']
   }

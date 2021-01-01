@@ -5,13 +5,13 @@ title: HTML
 
 import Tags from '../../components/Tags'
 
-## Variables
+## Constants
 
 <Tags presets={['html']} />
 
 The values set in [Site Setting](../configuration/site.md) and [Build Settings](../configuration/build.md) can be used in the template engine.
 
-| variables          | description                                            | [node-config](https://github.com/lorenwest/node-config) key |
+| constants          | description                                            | [node-config](https://github.com/lorenwest/node-config) key |
 | ------------------ | ------------------------------------------------------ | ----------------------------------------------------------- |
 | `IS_PRODUCTION`    | Whether the build mode is `NODE_ENV=production` or not | \-                                                          |
 | `SITE_TITLE`       | Site title                                             | `title`                                                     |
