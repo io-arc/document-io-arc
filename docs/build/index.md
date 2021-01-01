@@ -1,8 +1,8 @@
 ---
 id: overview
-title: Plugins
+title: Build
 sidebar_label: (TODO) Overview
-slug: /plugins/
+slug: /build/
 ---
 
 WIP

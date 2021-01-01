@@ -9,6 +9,7 @@ module.exports = {
   organizationName: 'io-arc', // Usually your GitHub org/user name.
   projectName: 'io-arc', // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: true,
     navbar: {
       title: 'io arc',
       logo: {
