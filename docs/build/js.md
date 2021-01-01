@@ -24,12 +24,11 @@ The values set in [Site Setting](../configuration/site.md) and [Build Settings](
 
 If you want to use [node-config][1] configuration information other than the available constants, you can use the `CONFIG` constants.
 
-```yaml
-# config/development.yml
+```yaml title="config/development.yml"
 api: https://foo.com
 ```
 
-```javascript
+```javascript title="Apps.ts"
 console.log(CONFIG.api)
 // result => https://foo.com
 ```
