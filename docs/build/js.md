@@ -144,11 +144,8 @@ module.exports = {
 
 ### Create a template
 
-If you have `@io-arc/task-service-worker` installed, you can use the command `$ ia-sw --template` or `$ ia-sw -t` to create `src/sw.js`.
-
-#### If the command cannot be executed
-
-Add the command to `scripts` in `package.json`.
+[See plugins document](../plugins/tasks.md#service-worker).  
+Add the command to `scripts` in `package.json`, if the command cannot be executed.
 
 ```json title="package.json"
 {

@@ -1,10 +1,11 @@
 ---
 id: other
 title: Other build
-sidebar_label: (TODO) Other
+sidebar_label: Other
 ---
 
-A build task that can be used regardless of the CLI answer.
+A build task that can be used regardless of the CLI answer.  
+`$ npm run XXX` is a script that is initially set in `package.json#scripts`.
 
 ## Use a `BrowserSync`
 
@@ -18,17 +19,32 @@ $ npm run server
 
 ## Build directory clean
 
-WIP
+Delete the contents of the output and stats directory.
+
+```shell
+$ npm run clean
+```
 
 ## File Copy
 
-If you put a file in the directory set in [Build Settings#wsDir.static](../configuration/build.md#wsdirstatic), it will be copied as is.  
-On the other hand, if you delete or rename a file, the old file will be deleted from the output directory.
+```shell
+$ npm run b:copy
+```
 
-## YAML to JSON transform
-
-WIP
+[See plugins document](../plugins/tasks.md#copy).
 
 ## Create a `manifest.json`
 
-WIP
+```shell
+$ npm run b:manifest
+```
+
+[See plugins document](../plugins/tasks.md#manifest).
+
+## YAML to JSON conversion
+
+```shell
+$ npm run b:yaml2json
+```
+
+[See plugins document](../plugins/tasks.md#yaml2json).
