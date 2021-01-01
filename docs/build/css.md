@@ -1,6 +1,7 @@
 ---
 id: css
-title: CSS
+title: CSS language build
+sidebar_label: CSS
 ---
 
 import Tags from '../../components/Tags'

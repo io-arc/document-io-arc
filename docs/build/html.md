@@ -1,6 +1,7 @@
 ---
 id: html
-title: HTML
+title: HTML template engine build
+sidebar_label: HTML
 ---
 
 import Tags from '../../components/Tags'

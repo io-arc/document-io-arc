@@ -13,20 +13,27 @@ module.exports = {
         'configuration/overview',
         'configuration/site',
         'configuration/build',
-        'configuration/webpack'
+        'configuration/webpack',
+        'configuration/bs'
       ],
       collapsed: false
     },
     {
       type: 'category',
       label: 'Build',
-      items: ['build/overview', 'build/html', 'build/css', 'build/js'],
+      items: [
+        'build/overview',
+        'build/html',
+        'build/css',
+        'build/js',
+        'build/other'
+      ],
       collapsed: false
     },
     {
       type: 'category',
       label: 'Plugins',
-      items: ['plugins/overview'],
+      items: ['plugins/overview', 'plugins/tasks'],
       collapsed: false
     },
 

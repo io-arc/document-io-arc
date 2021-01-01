@@ -1,8 +1,8 @@
 ---
 id: overview
-title: Build
+title: Overview
 sidebar_label: (TODO) Overview
 slug: /build/
 ---
 
-WIP
+共通して先頭にアンダースコアのついたファイルはビルド対象外となります。
