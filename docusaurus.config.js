@@ -25,7 +25,7 @@ module.exports = {
         // },
         {
           href: 'https://github.com/io-arc/io-arc',
-          label: 'GitHub',
+          className: 'nav-github',
           position: 'right'
         }
       ]
