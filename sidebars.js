@@ -51,6 +51,27 @@ module.exports = {
             'plugins/tasks/yaml2json'
           ],
           collapsed: false
+        },
+        {
+          type: 'category',
+          label: 'Modules',
+          items: [
+            'plugins/modules/env',
+            'plugins/modules/file-list',
+            'plugins/modules/logger',
+            'plugins/modules/output-dir-diff',
+            'plugins/modules/path-build',
+            'plugins/modules/read-yaml',
+            'plugins/modules/types',
+            'plugins/modules/utils',
+            'plugins/modules/webpack-loaders-image',
+            'plugins/modules/webpack-loaders-js',
+            'plugins/modules/webpack-loaders-pug-linter',
+            'plugins/modules/webpack-plugins-task-message',
+            'plugins/modules/webpack-settings',
+            'plugins/modules/yaml2json'
+          ],
+          collapsed: false
         }
       ],
       collapsed: true
