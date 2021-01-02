@@ -10,17 +10,21 @@ The file should be placed as `config/xxx.yml(or .json, or .js etc.)`.
 
 This CLI defines the file as follows.
 
-**Site settings**
+## Site configure files
 
 - default.yml
 - development.yml (`NODE_ENV=development`)
 - production.yml (`NODE_ENV=production`)
 
-**Build settings**
+## Build configure files
 
 - local.yml
 - local-development.yml (`NODE_ENV=development`)
 - local-production.yml (`NODE_ENV=production`)
+
+## More other configuration
+
+- [BrowserSync](../plugins/tasks/browser-sync.md#configure-file)
 
 :::tip
 The values you set can be used in Babel, TypeScript, and Pug.  
