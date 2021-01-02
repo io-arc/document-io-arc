@@ -56,7 +56,7 @@ module.exports = {
 
     // root example
     // {
-    //   type: 'ref',
+    //   type: 'doc',
     //   id: 'addTag'
     // },
     // {
