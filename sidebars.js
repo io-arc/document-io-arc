@@ -1,10 +1,12 @@
 module.exports = {
   docs: [
     {
-      type: 'category',
-      label: 'Getting Started',
-      items: ['intro', 'select-languages-and-frameworks'],
-      collapsed: false
+      type: 'doc',
+      id: 'intro'
+    },
+    {
+      type: 'doc',
+      id: 'select-languages-and-frameworks'
     },
     {
       type: 'category',
@@ -15,13 +17,13 @@ module.exports = {
         'configuration/build',
         'configuration/webpack'
       ],
-      collapsed: false
+      collapsed: true
     },
     {
       type: 'category',
       label: 'Build',
       items: ['build/overview', 'build/html', 'build/css', 'build/js'],
-      collapsed: false
+      collapsed: true
     },
     {
       type: 'category',
@@ -51,7 +53,7 @@ module.exports = {
           collapsed: false
         }
       ],
-      collapsed: false
+      collapsed: true
     }
 
     // root example

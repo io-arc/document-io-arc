@@ -1,8 +1,13 @@
 ---
 id: intro
-title: Introduction
+title: io arc
+sidebar_label: Getting Started
+hide_title: true
+description: It's so easy! build in 5 minutes! WEB/PWA/SPA boilerplate CLI.
 slug: /
 ---
+
+# Getting Started
 
 It's so easy! build in 5 minutes! WEB/PWA/SPA boilerplate CLI.
 

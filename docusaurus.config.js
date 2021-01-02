@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'io arc Documents',
+  title: 'io arc documents',
   tagline: "It's so easy! build in 5 minutes! WEB/PWA/SPA boilerplate CLI.",
   url: 'https://io-arc.docs.arc-one.jp',
   baseUrl: '/',
