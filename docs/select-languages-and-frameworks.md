@@ -2,6 +2,7 @@
 id: select-languages-and-frameworks
 title: Select languages and frameworks
 description: Available languages and frameworks
+slug: select-languages-and-frameworks.html
 ---
 
 ## HTML template engine

@@ -1,6 +1,7 @@
 ---
 id: site
 title: Site Settings
+slug: site.html
 ---
 
 Settings related to the website, such as the site title, are specified in the `default.yml` or `development.yml` or `production.yml`.  

@@ -1,6 +1,7 @@
 ---
 id: build
 title: Build Settings
+slug: build.html
 ---
 
 import Tags from '../../components/Tags'
