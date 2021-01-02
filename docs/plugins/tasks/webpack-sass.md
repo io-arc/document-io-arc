@@ -5,8 +5,6 @@ sidebar_label: webpack-sass
 slug: /plugins/task-webpack-sass.html
 ---
 
-WIP
-
 ## Usage
 
 ```shell
@@ -18,3 +16,5 @@ const { css } = require('@io-arc/task-webpack-sass')
 
 module.exports = css
 ```
+
+[See build document](../../build/css.md).

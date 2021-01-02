@@ -37,26 +37,35 @@ module.exports = {
             'plugins/tasks/copy',
             'plugins/tasks/manifest',
             'plugins/tasks/service-worker',
+            'plugins/tasks/webpack-babel',
+            'plugins/tasks/webpack-css',
+            'plugins/tasks/webpack-html',
+            'plugins/tasks/webpack-pug',
+            'plugins/tasks/webpack-sass',
+            'plugins/tasks/webpack-stylus',
+            'plugins/tasks/webpack-typescript',
+            'plugins/tasks/webpack-vue',
+            'plugins/tasks/webpack-vue-typescript',
             'plugins/tasks/yaml2json'
           ],
           collapsed: false
         }
       ],
       collapsed: false
-    },
-
-    // TODO: 以下最終的にはリンクから外す
-    {
-      type: 'ref',
-      id: 'addTag'
-    },
-    {
-      type: 'ref',
-      id: 'doc1'
-    },
-    {
-      type: 'ref',
-      id: 'mdx'
     }
+
+    // root example
+    // {
+    //   type: 'ref',
+    //   id: 'addTag'
+    // },
+    // {
+    //   type: 'ref',
+    //   id: 'doc1'
+    // },
+    // {
+    //   type: 'ref',
+    //   id: 'mdx'
+    // }
   ]
 }

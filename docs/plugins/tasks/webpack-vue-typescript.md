@@ -5,8 +5,6 @@ sidebar_label: webpack-vue-typescript
 slug: /plugins/task-webpack-vue-typescript.html
 ---
 
-WIP
-
 ## Usage
 
 ```shell
@@ -18,3 +16,5 @@ const { js } = require('@io-arc/task-webpack-vue-typescript')
 
 module.exports = js
 ```
+
+[See build document](../../build/js.md).

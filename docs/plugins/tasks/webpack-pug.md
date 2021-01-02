@@ -5,8 +5,6 @@ sidebar_label: webpack-pug
 slug: /plugins/task-webpack-pug.html
 ---
 
-WIP
-
 ## Usage
 
 ```shell
@@ -18,3 +16,5 @@ const { html } = require('@io-arc/task-webpack-pug')
 
 module.exports = html
 ```
+
+[See build document](../../build/html.md).

@@ -5,8 +5,6 @@ sidebar_label: webpack-babel
 slug: /plugins/task-webpack-babel.html
 ---
 
-WIP
-
 ## Usage
 
 ```shell
@@ -18,3 +16,5 @@ const { js } = require('@io-arc/task-webpack-babel')
 
 module.exports = js
 ```
+
+[See build document](../../build/js.md).

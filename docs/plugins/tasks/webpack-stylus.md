@@ -5,8 +5,6 @@ sidebar_label: webpack-stylus
 slug: /plugins/task-webpack-stylus.html
 ---
 
-WIP
-
 ## Usage
 
 ```shell
@@ -18,3 +16,5 @@ const { css } = require('@io-arc/task-webpack-stylus')
 
 module.exports = css
 ```
+
+[See build document](../../build/css.md).
