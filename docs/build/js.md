@@ -2,6 +2,7 @@
 id: js
 title: JavaScript preprocessor and framework build
 sidebar_label: JavaScript
+slug: js.html
 ---
 
 import Tags from '../../components/Tags'

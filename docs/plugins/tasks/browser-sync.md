@@ -2,7 +2,7 @@
 id: browser-sync
 title: '@io-arc/task-browser-sync'
 sidebar_label: browser-sync
-slug: /plugins/task-browser-sync
+slug: /plugins/task-browser-sync.html
 ---
 
 Start the local server.

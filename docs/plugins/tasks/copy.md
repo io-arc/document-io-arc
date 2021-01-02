@@ -2,7 +2,7 @@
 id: copy
 title: '@io-arc/task-copy'
 sidebar_label: copy
-slug: /plugins/task-copy
+slug: /plugins/task-copy.html
 ---
 
 If you put a file in the directory set in [Build Settings#wsDir.static](../../configuration/build.md#wsdirstatic), it will be copied as is.  

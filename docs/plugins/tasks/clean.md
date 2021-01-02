@@ -2,7 +2,7 @@
 id: clean
 title: '@io-arc/task-clean'
 sidebar_label: clean
-slug: /plugins/task-clean
+slug: /plugins/task-clean.html
 ---
 
 Delete the contents of the output and stats directory.

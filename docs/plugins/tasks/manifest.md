@@ -2,7 +2,7 @@
 id: manifest
 title: '@io-arc/task-manifest'
 sidebar_label: manifest
-slug: /plugins/task-manifest
+slug: /plugins/task-manifest.html
 ---
 
 Generate manifest.json for use with PWA, etc.

@@ -2,6 +2,7 @@
 id: css
 title: CSS language build
 sidebar_label: CSS
+slug: css.html
 ---
 
 import Tags from '../../components/Tags'

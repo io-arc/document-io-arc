@@ -2,6 +2,7 @@
 id: html
 title: HTML template engine build
 sidebar_label: HTML
+slug: html.html
 ---
 
 import Tags from '../../components/Tags'
