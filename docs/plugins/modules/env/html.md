@@ -15,22 +15,22 @@ Constants mainly used when building [HTML template engine](../../../select-langu
 
 \* The `WS_ROOT` constant cannot be changed.
 
-Working space for HTML directory name array.
+Array of working space directory names.
 
 ### `WS_HTML_PATH`
 
-**Config Key: -**  
 **Return: `string`**
+**Config Key: -**
 
-The absolute path to the HTML directory of the workspace.  
-Same as `pwd` command.
+`WS_HTML_ARRAY` converted to a path.
 
 ### `WS_HTML_PATH_ABSOLUTE`
 
 **Config Key: -**  
 **Return: `string`**
 
-The absolute path to the html directory.
+The absolute path to the `WS_HTML_PATH`.  
+Same as `pwd` command.
 
 ### `OUTPUT_IN_PHP`
 
@@ -90,4 +90,4 @@ Target for file-loader.
 **Return: `boolean`**  
 **Default: `false`**
 
-Minify of HTML files.
+Minify of build files.

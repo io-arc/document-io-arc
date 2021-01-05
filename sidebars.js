@@ -56,7 +56,28 @@ module.exports = {
           type: 'category',
           label: 'Modules',
           items: [
-            'plugins/modules/env',
+            {
+              type: 'category',
+              label: 'env',
+              items: [
+                'plugins/modules/env/env-index',
+                {
+                  type: 'category',
+                  label: 'Constants',
+                  items: [
+                    'plugins/modules/env/env-common',
+                    'plugins/modules/env/env-site',
+                    'plugins/modules/env/env-html',
+                    'plugins/modules/env/env-css',
+                    'plugins/modules/env/env-js',
+                    'plugins/modules/env/env-images',
+                    'plugins/modules/env/env-static',
+                    'plugins/modules/env/env-yaml2json'
+                  ],
+                  collapsed: false
+                }
+              ]
+            },
             'plugins/modules/file-list',
             'plugins/modules/logger',
             'plugins/modules/output-dir-diff',
