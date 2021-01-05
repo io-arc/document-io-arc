@@ -117,6 +117,9 @@ options:
         video: [src, poster]
         source: src
         img: src
+
+# Override process.env.NODE_ENV
+overrideEnv: development
 ```
 
 ## wsDir.xxx
@@ -448,3 +451,13 @@ See reference of [html-loader#attributes](https://webpack.js.org/loaders/html-lo
 ```
 
 See reference of [vue-loader#transformAssetUrls](https://vue-loader.vuejs.org/options.html#transformasseturls).
+
+---
+
+## overrideEnv
+
+<Tags keys={['all']} />
+
+**Default**: `undefined`
+
+For example, if you set `NODE_ENV=foo`, you can use `overrideEnv: development` to change the build-mode to develop because the build-mode of webpack does not have foo.
