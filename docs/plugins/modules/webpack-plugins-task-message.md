@@ -1,9 +1,11 @@
 ---
 id: webpack-plugins-task-message
 title: '@io-arc/webpack-plugins-task-message'
-sidebar_label: (TODO) webpack-plugins-task-message
+sidebar_label: webpack-plugins-task-message
 slug: /plugins/module-webpack-plugins-task-message.html
 ---
+
+Task complete message for webpack plugin.
 
 ## Usage
 
@@ -19,3 +21,17 @@ export default {
   plugins: [new TaskMessage('task name')]
 }
 ```
+
+## Methods
+
+### `TaskMessage(task)`
+
+**Return: (show log)**
+
+Logs the status of the task when webpack finishes building, or an error occurs.
+
+**Parameters**
+
+| params | type     | default | description |
+| ------ | -------- | ------- | ----------- |
+| `task` | `string` | \-      | Task name   |

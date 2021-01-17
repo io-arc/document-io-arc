@@ -1,9 +1,12 @@
 ---
 id: webpack-loaders-image
 title: '@io-arc/webpack-loaders-image'
-sidebar_label: (TODO) webpack-loaders-image
+sidebar_label: webpack-loaders-image
 slug: /plugins/module-webpack-loaders-image.html
 ---
+
+Image deploy for using [file-loader](https://github.com/webpack-contrib/file-loader).  
+Auto insert image path to HTML, CSS and JavaScript.
 
 ## Usage
 
@@ -19,6 +22,35 @@ export default {
   // (abbreviation)
   module: {
     rules: [ImageLoader([], DEPLOY_IMG_ARRAY, true)]
+  }
+}
+```
+
+## Functions
+
+### `ImageLoader(base, target, isHash)`
+
+**Return: `webpack.RuleSetRule`**
+
+Generate the file-loader information by specifying the output destination for each language, and the output destination for images.
+
+**Parameters**
+
+| params   | type       | default | description                                |
+| -------- | ---------- | ------- | ------------------------------------------ |
+| `base`   | `string[]` | \-      | Language build output directory name array |
+| `target` | `string[]` | \-      | Image build output directory name array    |
+| `isHash` | `boolean`  | \-      | Image path adding hash in 6-digit          |
+
+**example**
+
+```typescript title="webpack.config.ts"
+import { ImageLoader } from '@io-arc/webpack-loaders-image'
+
+export default {
+  // (abbreviation)
+  module: {
+    rules: [ImageLoader(['common', 'js'], ['common', 'img'], true)]
   }
 }
 ```

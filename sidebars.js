@@ -92,7 +92,7 @@ module.exports = {
             'plugins/modules/webpack-settings',
             'plugins/modules/yaml2json'
           ],
-          collapsed: false
+          collapsed: true
         }
       ],
       collapsed: true
