@@ -45,7 +45,21 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} io arc project.`
     },
-    image: 'img/ogp.png'
+    image: 'img/ogp.png',
+    algolia: {
+      // Refs: https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#reference
+      apiKey: '4669342fae6d4f0b25ec180f5d9edd3e',
+      indexName: 'io-arc',
+      appID: 'UPSWVU2HFQ',
+
+      // Optional: see doc section bellow
+      contextualSearch: true
+
+      // Optional: Algolia search parameters
+      // searchParameters: {}
+
+      //... other Algolia params
+    }
   },
   plugins: ['docusaurus-plugin-sass'],
   presets: [
