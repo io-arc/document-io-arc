@@ -1,0 +1,44 @@
+root: true
+
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+
+env:
+  browser: true
+  es6: true
+  worker: true
+  node: true
+
+extends:
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+  - plugin:react/recommended
+  - prettier/@typescript-eslint
+
+plugins:
+  - react
+
+settings:
+  react:
+    createClass: createReactClass
+    pragma: React
+    fragment: Fragment
+    version: detect
+    flowVersion: '0.53'
+  propWrapperFunctions:
+    - forbidExtraProps
+    - property: freeze
+      object: Object
+
+rules:
+  prettier/prettier:
+    - error
+    - trailingComma: none
+      tabWidth: 2
+      singleQuote: true
+      semi: false
+      arrowParens: always
+
+  eofline: off
