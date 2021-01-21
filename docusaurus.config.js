@@ -48,17 +48,26 @@ module.exports = {
     image: 'img/ogp.png',
     algolia: {
       // Refs: https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#reference
-      apiKey: '4669342fae6d4f0b25ec180f5d9edd3e',
+      apiKey: '5df5e67f90d772363bf237f1e7b27f9e',
       indexName: 'io-arc',
-      appID: 'UPSWVU2HFQ',
 
       // Optional: see doc section bellow
-      contextualSearch: true
+      contextualSearch: true,
 
       // Optional: Algolia search parameters
       // searchParameters: {}
 
       //... other Algolia params
+      // inputSelector: '.DocSelector',
+      algoliaOptions: {
+        facetFilters: [
+          'type:content',
+          'version:current',
+          'language:en',
+          'docusaurus_tag:docs-default-current'
+        ]
+      },
+      debug: false // Set debug to true if you want to inspect the dropdown
     }
   },
   plugins: ['docusaurus-plugin-sass'],
