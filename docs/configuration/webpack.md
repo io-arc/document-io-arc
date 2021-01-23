@@ -5,7 +5,7 @@ slug: webpack.html
 ---
 
 There are several extensions available on the user side as well.  
-The extension is configured in `<project>/config/webpack.extend.js`.
+The extension is configured in `<project>/config/webpack.extends.js`.
 
 The extensible webpack options are as follows.
 
@@ -15,7 +15,7 @@ The extensible webpack options are as follows.
 
 ## example
 
-```js title="/config/webpack.extend.js"
+```js title="/config/webpack.extends.js"
 const Foobar = require('foo-bar')
 
 module.exports = {
