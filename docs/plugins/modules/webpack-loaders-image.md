@@ -15,16 +15,25 @@ $ npm i @io-arc/webpack-loaders-image
 ```
 
 ```typescript title="index.ts"
-import { ImageLoader } from '@io-arc/webpack-loaders-image'
+import { ImageLoader, ImageMinPlugin } from '@io-arc/webpack-loaders-image'
 import { DEPLOY_IMG_ARRAY } from '@io-arc/env'
 
 export default {
   // (abbreviation)
   module: {
     rules: [ImageLoader([], DEPLOY_IMG_ARRAY, true)]
-  }
+  },
+  plugins: [ImageMinPlugin]
 }
 ```
+
+## Variables
+
+### `ImageMinPlugin`
+
+**Return: `webpack.Plugin`**
+
+Using [image-minimizer-webpack-plugin](https://github.com/webpack-contrib/image-minimizer-webpack-plugin).
 
 ## Functions
 
