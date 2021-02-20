@@ -18,7 +18,13 @@ const items = {
   babel: 'babel',
   typescript: 'typescript',
   vue: 'vue',
-  yaml: 'yaml'
+  yaml: 'yaml',
+  js: 'js',
+  converter: 'converter',
+  server: 'server',
+  pwa: 'pwa',
+  img: 'img',
+  webpack: 'webpack'
 } as const
 type items = typeof items[keyof typeof items]
 
@@ -49,6 +55,12 @@ const tagClass = (item: items): string => {
       return styles.tagsItemVue
     case items.yaml:
       return styles.tagsItemYaml
+    case items.js:
+      return styles.tagsItemJs
+    case items.pwa:
+      return styles.tagsItemPwa
+    case items.webpack:
+      return styles.tagsItemWebpack
     default:
       return ''
   }
@@ -76,8 +88,20 @@ const display = (item: items): string => {
       return 'Vue'
     case items.yaml:
       return 'YAML2JSON'
+    case items.js:
+      return 'JavaScript'
+    case items.converter:
+      return 'Converter'
+    case items.server:
+      return 'Server'
+    case items.pwa:
+      return 'PWA'
+    case items.img:
+      return 'Image'
+    case items.webpack:
+      return 'webpack'
     default:
-      return ''
+      return item
   }
 }
 
