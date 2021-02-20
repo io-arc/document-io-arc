@@ -19,7 +19,7 @@ import { TDirName } from '@io-arc/types'
 const foo: TDirName = 'xxxx'
 ```
 
-## Defines
+## Type
 
 | define         | type                                    | description                           |
 | -------------- | --------------------------------------- | ------------------------------------- |
@@ -34,3 +34,51 @@ const foo: TDirName = 'xxxx'
 | `TJsonString`  | `string`                                | Using `JSON.stringify`                |
 | `TUrl`         | `string`                                | URL                                   |
 | `TWebpackMode` | `none` \| `development` \| `production` | Webpack build mode                    |
+
+## Interface
+
+### `IfGif2WebpOptions`
+
+Gif to webp convert options.  
+See options of [imagemin-gif2webp](https://github.com/imagemin/imagemin-gif2webp).
+
+```typescript
+interface IfGif2WebpOptions {
+  lossy?: boolean
+  mixed?: boolean
+  quality?: number
+  method?: number
+  minimize?: boolean
+  kmin?: number
+  kmax?: number
+  filter?: number
+  metadata?: string
+  multiThreading?: boolean
+  buffer?: Buffer
+}
+```
+
+### `IfWebpConverterConfig`
+
+Webp convert configure.
+
+```typescript
+interface IfWebpConverterConfig {
+  // Target directories name array for image files used converter
+  target: TDirNameKey[]
+  ext: {
+    png: boolean
+    jpg: boolean
+    gif: boolean
+  }
+  // Output directories name array
+  output?: TDirNameKey[]
+  options?: imageminWebp.Options
+  gifOptions?: IfGif2WebpOptions
+  // Delete the webp file before starting the task.
+  deleteBefore?: boolean
+}
+```
+
+`imageminWebp.Options` is "PNG/JPEG" webp convert options.  
+See options of [imagemin-webp](https://github.com/imagemin/imagemin-webp).

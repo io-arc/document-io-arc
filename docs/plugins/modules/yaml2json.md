@@ -126,3 +126,30 @@ y2j2.removeAll('dist/data/**/*.json').subscribe(
   () => console.log('done')
 )
 ```
+
+### `remove(filepath)`
+
+**Return: `RxJS.Observable<string>`**
+
+Remove the specified file.  
+The `filepath` does not have to be the directory specified in the constructor.  
+However, the output destination will be the directory specified in the constructor.
+
+**Parameters**
+
+| params     | type     | default | description                                |
+| ---------- | -------- | ------- | ------------------------------------------ |
+| `filepath` | `string` | \-      | The file path to which you want to convert |
+
+**Example**
+
+```typescript
+import Yaml2Json from '@io-arc/yaml2josn'
+
+const y2j = new Yaml2Json(['src', 'yaml'], ['dist'])
+y2j.remove('dist/data/foo.json', false).subscribe(
+  (filename) => console.log(filename),
+  (err) => console.error(err),
+  () => console.log('done')
+)
+```

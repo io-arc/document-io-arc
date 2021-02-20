@@ -19,6 +19,20 @@ $ NODE_ENV=development MODE_ENV=once ia-yaml2json
 $ NODE_ENV=development MODE_ENV=watch ia-yaml2json
 ```
 
+Or
+
+```json title="package.json"
+{
+  "scripts": {
+    "yaml2json": "ia-yaml2json"
+  }
+}
+```
+
+```shell
+$ npm run yaml2json
+```
+
 ## Configuration
 
 Converts the YAML file in the working space to a JSON file and outputs it.
