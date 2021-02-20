@@ -37,7 +37,7 @@ Task libraries for building and other tasks used in the project.
 
 ## Modules
 
-Libraries supporting the build task
+Libraries supporting the build tasks.
 
 | Package                                                                         | Tags                                         | Description                                                      |
 | ------------------------------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 id: service-worker
 title: '@io-arc/task-service-worker'
 sidebar_label: service-worker
-slug: /plugins/task-service-worker.html
+slug: /plugins/tasks/service-worker.html
 ---
 
 Create a Service Worker file.  

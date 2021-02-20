@@ -2,7 +2,7 @@
 id: webpack-loaders-js
 title: '@io-arc/webpack-loaders-js'
 sidebar_label: webpack-loaders-js
-slug: /plugins/module-webpack-loaders-js.html
+slug: /plugins/modules/webpack-loaders-js.html
 ---
 
 A webpack loader for handling Babel and TypeScript.

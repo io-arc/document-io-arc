@@ -2,7 +2,7 @@
 id: yaml2json
 title: '@io-arc/yaml2json'
 sidebar_label: yaml2json
-slug: /plugins/module-yaml2json.html
+slug: /plugins/modules/yaml2json.html
 ---
 
 YAML to JSON conversion.  

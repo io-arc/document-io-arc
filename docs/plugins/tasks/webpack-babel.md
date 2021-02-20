@@ -2,7 +2,7 @@
 id: webpack-babel
 title: '@io-arc/task-webpack-babel'
 sidebar_label: webpack-babel
-slug: /plugins/task-webpack-babel.html
+slug: /plugins/tasks/webpack-babel.html
 ---
 
 ## Usage

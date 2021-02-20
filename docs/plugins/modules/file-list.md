@@ -2,7 +2,7 @@
 id: file-list
 title: '@io-arc/file-list'
 sidebar_label: file-list
-slug: /plugins/module-file-list.html
+slug: /plugins/modules/file-list.html
 ---
 
 Get the file list.

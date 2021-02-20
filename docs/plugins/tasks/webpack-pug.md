@@ -2,7 +2,7 @@
 id: webpack-pug
 title: '@io-arc/task-webpack-pug'
 sidebar_label: webpack-pug
-slug: /plugins/task-webpack-pug.html
+slug: /plugins/tasks/webpack-pug.html
 ---
 
 ## Usage

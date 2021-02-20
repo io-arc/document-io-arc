@@ -2,7 +2,7 @@
 id: webp-converter
 title: '@io-arc/task-webp-converter'
 sidebar_label: webp-converter
-slug: /plugins/task-webp-converter.html
+slug: /plugins/tasks/webp-converter.html
 ---
 
 PNG, JPG, GIF files to Webp files conversions.  

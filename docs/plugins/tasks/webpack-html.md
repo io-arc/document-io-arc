@@ -2,7 +2,7 @@
 id: webpack-html
 title: '@io-arc/task-webpack-html'
 sidebar_label: webpack-html
-slug: /plugins/task-webpack-html.html
+slug: /plugins/tasks/webpack-html.html
 ---
 
 ## Usage

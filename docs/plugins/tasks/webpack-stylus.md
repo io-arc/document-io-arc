@@ -2,7 +2,7 @@
 id: webpack-stylus
 title: '@io-arc/task-webpack-stylus'
 sidebar_label: webpack-stylus
-slug: /plugins/task-webpack-stylus.html
+slug: /plugins/tasks/webpack-stylus.html
 ---
 
 ## Usage

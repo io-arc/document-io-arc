@@ -2,7 +2,7 @@
 id: types
 title: '@io-arc/types'
 sidebar_label: types
-slug: /plugins/module-types.html
+slug: /plugins/modules/types.html
 ---
 
 Boilerplate TypeScript global types.

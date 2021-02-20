@@ -2,7 +2,7 @@
 id: read-yaml
 title: '@io-arc/read-yaml'
 sidebar_label: read-yaml
-slug: /plugins/module-read-yaml.html
+slug: /plugins/modules/read-yaml.html
 ---
 
 Transpile YAML to JSON.  

@@ -2,7 +2,7 @@
 id: logger
 title: '@io-arc/logger'
 sidebar_label: logger
-slug: /plugins/module-logger.html
+slug: /plugins/modules/logger.html
 ---
 
 Logging output to Terminal console.  

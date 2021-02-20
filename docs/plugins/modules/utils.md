@@ -2,7 +2,7 @@
 id: utils
 title: '@io-arc/utils'
 sidebar_label: utils
-slug: /plugins/module-utils.html
+slug: /plugins/modules/utils.html
 ---
 
 Utility functions and webpack extends.

@@ -2,7 +2,7 @@
 id: webpack-loaders-image
 title: '@io-arc/webpack-loaders-image'
 sidebar_label: webpack-loaders-image
-slug: /plugins/module-webpack-loaders-image.html
+slug: /plugins/modules/webpack-loaders-image.html
 ---
 
 Image deploy for using [file-loader](https://github.com/webpack-contrib/file-loader).  

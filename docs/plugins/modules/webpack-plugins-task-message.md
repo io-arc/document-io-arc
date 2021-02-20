@@ -2,7 +2,7 @@
 id: webpack-plugins-task-message
 title: '@io-arc/webpack-plugins-task-message'
 sidebar_label: webpack-plugins-task-message
-slug: /plugins/module-webpack-plugins-task-message.html
+slug: /plugins/modules/webpack-plugins-task-message.html
 ---
 
 Task complete message for webpack plugin.

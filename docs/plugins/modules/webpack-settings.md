@@ -2,7 +2,7 @@
 id: webpack-settings
 title: '@io-arc/webpack-settings'
 sidebar_label: webpack-settings
-slug: /plugins/module-webpack-settings.html
+slug: /plugins/modules/webpack-settings.html
 ---
 
 webpack build settings.
