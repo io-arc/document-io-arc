@@ -68,6 +68,10 @@ module.exports = {
         ]
       },
       debug: false // Set debug to true if you want to inspect the dropdown
+    },
+    gtag: {
+      trackingID: 'G-SW9G28KLRT',
+      anonymizeIP: true
     }
   },
   plugins: ['docusaurus-plugin-sass'],
