@@ -2,7 +2,7 @@
 id: output-dir-diff
 title: '@io-arc/output-dir-diff'
 sidebar_label: output-dir-diff
-slug: /plugins/module-output-dir-diff.html
+slug: /plugins/modules/output-dir-diff.html
 ---
 
 A relative path to another directory from one directory.

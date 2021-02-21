@@ -2,7 +2,7 @@
 id: webpack-loaders-pug-linter
 title: '@io-arc/webpack-loaders-pug-linter'
 sidebar_label: webpack-loaders-pug-linter
-slug: /plugins/module-webpack-loaders-pug-linter.html
+slug: /plugins/modules/webpack-loaders-pug-linter.html
 ---
 
 A webpack loader that handles Pug's Lint.

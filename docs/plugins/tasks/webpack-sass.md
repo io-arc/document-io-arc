@@ -2,7 +2,7 @@
 id: webpack-sass
 title: '@io-arc/task-webpack-sass'
 sidebar_label: webpack-sass
-slug: /plugins/task-webpack-sass.html
+slug: /plugins/tasks/webpack-sass.html
 ---
 
 ## Usage

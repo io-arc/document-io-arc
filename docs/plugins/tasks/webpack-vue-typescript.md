@@ -2,7 +2,7 @@
 id: webpack-vue-typescript
 title: '@io-arc/task-webpack-vue-typescript'
 sidebar_label: webpack-vue-typescript
-slug: /plugins/task-webpack-vue-typescript.html
+slug: /plugins/tasks/webpack-vue-typescript.html
 ---
 
 ## Usage

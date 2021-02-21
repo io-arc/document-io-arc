@@ -2,7 +2,7 @@
 id: webpack-vue
 title: '@io-arc/task-webpack-vue'
 sidebar_label: webpack-vue
-slug: /plugins/task-webpack-vue.html
+slug: /plugins/tasks/webpack-vue.html
 ---
 
 ## Usage

@@ -2,7 +2,7 @@
 id: path-build
 title: '@io-arc/path-build'
 sidebar_label: path-build
-slug: /plugins/module-path-build.html
+slug: /plugins/modules/path-build.html
 ---
 
 Convert an array to a relative or absolute path.

@@ -11,6 +11,7 @@
   padding: 0.3em 0.4em;
   border-radius: 4px;
   font-weight: bold;
+  background: #666;
 }
 
 .tagsItemAll {
@@ -60,5 +61,20 @@
 
 .tagsItemYaml {
   background: #025b9c;
+  color: #fff;
+}
+
+.tagsItemJs {
+  background: #ff8d11;
+  color: #111;
+}
+
+.tagsItemPwa {
+  background: #129ace;
+  color: #fff;
+}
+
+.tagsItemWebpack {
+  background: #1f72b3;
   color: #fff;
 }

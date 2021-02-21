@@ -2,7 +2,7 @@
 id: yaml2json
 title: '@io-arc/task-yaml2json'
 sidebar_label: yaml2json
-slug: /plugins/task-yaml2json.html
+slug: /plugins/tasks/yaml2json.html
 ---
 
 YAML to JSON conversion.
@@ -17,6 +17,20 @@ $ NODE_ENV=development MODE_ENV=once ia-yaml2json
 
 # watch run
 $ NODE_ENV=development MODE_ENV=watch ia-yaml2json
+```
+
+Or
+
+```json title="package.json"
+{
+  "scripts": {
+    "yaml2json": "ia-yaml2json"
+  }
+}
+```
+
+```shell
+$ npm run yaml2json
 ```
 
 ## Configuration
