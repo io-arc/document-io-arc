@@ -54,12 +54,11 @@ module.exports = {
       // Optional: see doc section bellow
       contextualSearch: true,
 
-      // Optional: Algolia search parameters
-      // searchParameters: {}
-
       //... other Algolia params
       // inputSelector: '.DocSelector',
-      algoliaOptions: {
+
+      // Optional: Algolia search parameters
+      searchParameters: {
         facetFilters: [
           'type:content',
           'version:current',
