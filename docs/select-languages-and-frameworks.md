@@ -19,7 +19,7 @@ slug: select-languages-and-frameworks.html
 ## JavaScript preprocessor
 
 - [Babel](https://babeljs.io/) (Default: 7.9.6)
-- [TypeScript](https://www.typescriptlang.org/) (Default: 3.8.3)
+- [TypeScript](https://www.typescriptlang.org/) (Default: latest)
 
 To update the version, please use the command after creating the boilerplate.  
 e.g. `npm i -D typescript@4.1.3`.

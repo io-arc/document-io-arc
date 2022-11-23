@@ -5,6 +5,7 @@ slug: build.html
 ---
 
 import Tags from '../../components/Tags'
+import Version from '../../components/Version'
 
 Settings related to the build settings are specified in the `local.yml` or `local-development.yml` or `local-production.yml`.  
 The initial value is set to the information you answered in the CLI dialog.
@@ -117,6 +118,24 @@ options:
         video: [src, poster]
         source: src
         img: src
+        
+  imagemin:
+    - 
+      - gifsicle
+      - interlaced: true
+        optimizationLevel: 1
+        colors: 256
+    -
+      - jpegtran
+      - progressive: true
+    -
+      - optipng
+      - optimizationLevel: true
+    -
+      - svgo
+      - 
+        plugins:
+          - removeViewBox: true
 
 # Override process.env.NODE_ENV
 overrideEnv: development
@@ -307,6 +326,27 @@ Pug's Lint configuration file path that can only be set in Vue.js components.
 
 Using [node-css-mqpacker](https://github.com/hail2u/node-css-mqpacker).
 
+### options.css.postcss.autoprefixer
+
+<Version v="1.1.1" />
+<Tags presets={['css']} keys={['vue']} />
+
+**Default**: `undefined`
+
+Autoprefixer option.  
+Using [autoprefixer](https://github.com/postcss/autoprefixer).
+
+If setting e.g.  
+
+```json
+{
+  "autoprefixer": {
+    "grid": "autoplace",
+    "flexbox": "no-2009"
+  }
+}
+```
+
 ### options.js.minify
 
 <Tags presets={['js']} />
@@ -365,6 +405,29 @@ Path of the TypeScript configuration file to check when **building webpack**.
 <Tags keys={['yaml']} />
 
 **Default**: `false`
+
+### options.imagemin
+
+<Version v="1.1.1" />
+
+<Tags presets={['html', 'css', 'js']} />
+
+**Default**:
+
+```json
+[
+  ["gifsicle", { "interlaced": true, "optimizationLevel": 1, "colors": 256 }],
+  ["jpegtran", { "progressive": true }],
+  ["optipng", { "optimizationLevel": 5 }],
+  ["svgo", { "plugins": [{ "removeViewBox": true }] }]
+]
+```
+
+Using [image-minimizer-webpack-plugin](https://webpack.js.org/plugins/image-minimizer-webpack-plugin/).  
+Default built-in plugins is [imagemin-gifsicle](https://github.com/imagemin/imagemin-gifsicle), [imagemin-jpegtran](https://github.com/imagemin/imagemin-jpegtran), [imagemin-optipng](https://github.com/imagemin/imagemin-optipng), [imagemin-svgo](https://github.com/imagemin/imagemin-svgo).  
+If you want to change it, install the plugin and set the plugin options.
+
+If you do not use it, delete `option.imagemin`.
 
 ---
 

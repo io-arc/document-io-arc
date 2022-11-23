@@ -74,3 +74,11 @@ interface IfWebpConverterConfig {
 ```
 
 `imageminWebp.Options` is the see [imagemin-webp options](https://github.com/imagemin/imagemin-webp#options)
+
+## `USE_IMAGEMIN`
+
+**Config key: `options.imagemin`**  
+**Return: `[string, object][] | undefined`**  
+**Default: `undefined`**
+
+Using imagemin plugins.
